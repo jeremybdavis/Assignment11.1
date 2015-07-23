@@ -82,9 +82,12 @@
 
     </main>
 
-    <script type="text/template" class="template">
+    <script type="text/template" id="itemTemplate">
       <div class="item">
-
+        <a href="<%- imgUrl %>">
+          <img src="<%- image %>" alt="Item Image" />
+        </a>
+        <p><%- title %></p>
       </div>
     </script>
 

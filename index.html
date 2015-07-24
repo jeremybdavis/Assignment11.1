@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="css/main.css" media="screen">
     <meta charset="utf-8">
     <title>ETSY Search Page</title>
   </head>
@@ -16,8 +17,8 @@
       <aside id="sidebar">
         <p>Show results for:</p>
         <div class="categories">
-          <p><a href="#">All Categories</a></p>
           <ul>
+          <p><a href="#">All Categories:</a></p>
             <li><a href="#">Jewelry</a></li>
             <li><a href="#">Books, Movies & Music</a></li>
             <li><a href="#">Art & Collectibles</a></li>
@@ -34,11 +35,8 @@
             <li><a href="#">Pet Supplies</a></li>
           </ul>
       </div>
-
+      <p>Refine your search</p>
       <div class="refineSearch">
-        <p>Refine your search</p>
-
-      <div id="itemType">
         <p>Item Type</p>
         <ul>
           <li><a href="#">All Items</a></li>
@@ -77,12 +75,20 @@
         <p>Ship To</p>
       </div>
 
-      </div>
     </aside>
 
   </main>
 
-    <script src="bower_components/underscore/underscore-min.js"></script>
+  <script type="text/template" id="itemTemplate">
+  <div class="item">
+    <a href="<%- imgUrl %>">
+      <img src="<%- image %>" alt="Item Image" />
+    </a>
+    <p><%- title %></p>
+  </div>
+</script>
+
+    // <script src="bower_components/underscore/underscore-min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>

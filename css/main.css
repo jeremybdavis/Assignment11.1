@@ -4,12 +4,17 @@ html {
 *,
 *::after,
 *::before {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
+body{
+  background-color: #F5F5F1;
 
+}
 main {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
   main::after {
     clear: both;
     content: "";
@@ -19,8 +24,47 @@ main {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%; }
+
+     a{
+      text-decoration: none;
+      font: arial, sans-serif;
+      font-size: 15px;
+      color: #179BBB;
+    }
+
+    a:hover{
+      text-decoration: underline;
+    }
+
+    ul li{
+      list-style-type: none;
+    }
+
+    div.categories > ul{
+      box-sizing: border-box;
+      width: 200px;
+      padding: 20px;
+      border: 1px solid #DDD;
+      background-color: white;
+    }
+
+    .categories p a{
+      color: black;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+      main aside .refineSearch {
+      box-sizing: border-box;
+      width: 200px;
+      padding: 20px;
+      border: 1px solid #DDD;
+      background-color: white;
+
+    }
+
     main aside #sidebar:last-child {
-      margin-right: 0; }
+      margin-right: 0;
+    }
   main #primary-content {
     float: left;
     display: block;

@@ -46,11 +46,33 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 22.37878%; }
+  width: 22.37878%;
+  font-size: 13px;
+  font-family: arial, sans-serif; }
   #sidebar:last-child {
     margin-right: 0; }
+  #sidebar a {
+    color: #0192B5;
+    padding: 0 0 0 22px; }
+    #sidebar a:hover {
+      text-decoration: underline; }
+  #sidebar p {
+    font-weight: 600;
+    color: #555;
+    padding: 0 0 0 10px; }
+    #sidebar p a {
+      color: #555;
+      padding: 0 0 0 12px; }
   #sidebar .categories {
-    background-color: #fff; }
+    background-color: #fff;
+    border: 1px solid #E1E3DF;
+    border-bottom-color: #CBCCC9;
+    border-radius: 3px; }
+  #sidebar .refineSearch {
+    background-color: #fff;
+    border: 1px solid #E1E3DF;
+    border-bottom-color: #CBCCC9;
+    border-radius: 3px; }
 
 section#primary-content {
   float: left;

@@ -25,9 +25,41 @@ body {
 
 #sidebar {
   @include span-columns(2.9);
+  font-size: 13px;
+  font-family: arial, sans-serif;
+
+  a {
+    color: #0192B5;
+    padding: 0 0 0 22px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    color: #555;
+    padding: 0 0 0 10px;
+
+    a {
+      color: #555;
+      padding: 0 0 0 12px;
+    }
+  }
 
   .categories{
     background-color: #fff;
+    border: 1px solid #E1E3DF;
+    border-bottom-color: #CBCCC9;
+    border-radius: 3px;
+  }
+
+  .refineSearch {
+    background-color: #fff;
+    border: 1px solid #E1E3DF;
+    border-bottom-color: #CBCCC9;
+    border-radius: 3px;
   }
 }
 

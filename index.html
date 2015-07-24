@@ -12,10 +12,11 @@
     <main>
       <section id="primary-content">
 
+
       </section>
 
       <aside id="sidebar">
-        <p>Show results for:</p>
+        <p class = "heading">Show results for:</p>
         <div class="categories">
           <p><a href="#">All Categories</a></p>
           <ul>
@@ -36,52 +37,135 @@
           </ul>
         </div>
 
+        <p class="heading">Refine your search</p>
         <div class="refineSearch">
-          <p>Refine your search</p>
+          <div class="searchType">
+            <p>Item Type</p>
+            <form>
+              <a href="#">
+                <input type="radio" value="All Items" checked>All Items
+              </a>
+              <br>
+              <a href="#">
+                <input type="radio" value="Handmade">Handmade
+              </a>
+              <br>
+              <a href="#">
+                <input type="radio" value="Vintage">Vintage
+              </a>
+            </form>
+          </div>
 
-        <div id="itemType">
-          <p>Item Type</p>
-          <ul>
-            <li><a href="#">All Items</a></li>
-            <li><a href="#">Handmade</a></li>
-            <li><a href="#">Vintage</a></li>
-          </ul>
-        </div>
+          <div class="searchType">
+            <p>Price</p>
+            <form type="text">
+              <input type="text" placeholder="Low" name="lowPrice">
+              <span>to</span>
+              <input type="text" placeholder="High" name="lowPrice">
+              <input type="submit" value="|>">
+            </form>
+          </div>
 
-        <div id="price">
-          <p>Price</p>
-          <span></span>
-        </div>
-
-        <div id="filterByColor">
-          <p>Filter by Color</p>
-        </div>
-
-        <div id="orderOptions">
-          <p>Ordering Options</p>
-            <ul>
-              <li><a href="#">Accepts Etsy Gift Cards</a></li>
-              <li><a href="#">Customizable</a></li>
+          <div class="searchType">
+            <p>Filter by Color</p>
+            <ul class = "colors">
+              <li>
+                <a href="#"><div id="red"></div></a>
+              </li>
+              <li>
+                <a href="#"><div id="orange"></div></a>
+              </li>
+              <li>
+                <a href="#"><div id="yellow"></div></a>
+              </li>
+              <li>
+                <a href="#"><div id="green"></div></a>
+              </li>
+              <li>
+                <a href="#"><div id="blue"></div></a>
+              </li>
+              <li>
+                <a href="#"><div id="purple"></div></a>
+              </li>
+              <li>
+                <a href="#"><div id="black"></div></a>
+              </li>
+              <li>
+                <a href="#"><div id="white"></div></a>
+              </li>
             </ul>
-        </div>
+          </div>
 
-        <div class="shopLoc">
-          <ul>
-            <li><a href="#">Anywhere</a></li>
-            <li><a href="#">United States</a></li>
-            <li><a href="#">Choose a custom location</a></li>
-          </ul>
+          <div class="searchType">
+            <p>Ordering Options</p>
+            <form>
+              <a href="#"><input type="checkbox">Accepts Etsy Gift Cards</a>
+              <br>
+              <a href="#"><input type="checkbox">Customizable</a>
+            </form>
+          </div>
 
-        </div>
+          <div class="searchType">
+            <form>
+              <a href="#"><input type="radio" checked>Anywhere</a>
+              <br>
+              <a href="#"><input type="radio">Choose a custom location</a>
+            </form>
+          </div>
 
-        <div id="shipTo">
-          <p>Ship To</p>
-        </div>
+          <div id="searchType">
+            <p>Ship To</p>
+            <select>
+               <option value="United States">United States</option>
+               <option value="Australia">Australia</option>
+               <option value="Canada">Canada</option>
+               <option value="France">France</option>
+               <option value="Germany">Germany</option>
+               <option value="Greece">Greece</option>
+               <option value="Ireland">Ireland</option>
+               <option value="Italy">Italy</option>
+               <option value="Japan">Japan</option>
+               <option value="New Zealand">New Zealand</option>
+               <option value="Portugal">Portugal</option>
+               <option value="Russia">Russia</option>
+               <option value="Spain">Spain</option>
+               <option value="The Netherlands">The Netherlands</option>
+               <option value="Middle Earth">Middle Earth</option>
+               <option value="Mordor">Mordor</option>
+            </select>
+          </div>
 
         </div>
       </aside>
 
     </main>
+
+    <section class="footer">
+      <div class="footer1">
+        <p>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
+        <form action="demo_form.asp">
+          <input type="text" placeholder="Enter your email">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+      <div class="footer2">
+        <div class="footerCol">
+
+        </div>
+        <div class="footerCol">
+
+        </div>
+        <div class="footerCol">
+
+        </div>
+        <div class="footerCol">
+
+        </div>
+        <div class="footerCol">
+
+        </div>
+      </div>
+    </section>
 
     <script type="text/template" id="itemTemplate">
       <div class="item">

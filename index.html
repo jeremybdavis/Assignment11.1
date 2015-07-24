@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>ETSY Search Page</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header>
@@ -87,7 +88,13 @@
         <a href="<%- imgUrl %>">
           <img src="<%- image %>" alt="Item Image" />
         </a>
-        <p><%- title %></p>
+        <a href="<%- imgUrl %>" class="title-row">
+          <p><%- subtitle() %></p>
+        </a>
+        <div class="meta-row">
+          <a href="<%- shopUrl %>"> <%- shop %> </a>
+          <p><%- priceTag() %></p>
+        </div>
       </div>
     </script>
 

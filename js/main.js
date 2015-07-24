@@ -7,6 +7,7 @@ $.ajax(mainUrl, {
   },
   success: function(data, textStatus, xhr){
     buildAllItems(data.results);
+    console.log(data.results);
   }
 })
 
@@ -28,7 +29,19 @@ var buildItems = function(item){
 
   var imgUrl = item.url;
   var title = item.title;
-  // var shop = item.shop.shop_name;
+  var subtitle = function(){
+    if(title.length > 28){
+      return title.substring(0, 28) + "...";
+    } else {
+      return title;
+    }
+  };
+  var shop = item.Shop.shop_name;
+  var shopUrl = item.Shop.url;
+  var price = item.price;
+  var priceTag = function(){
+    return "$" + price;
+  };
 
   var itemTemplate = $('#itemTemplate').html();
   var itemHTML = _.template(itemTemplate);
@@ -36,14 +49,12 @@ var buildItems = function(item){
     {
       image: image,
       imgUrl: imgUrl,
-      title: title,
-      // shop: shop,
+      subtitle: subtitle,
+      shop: shop,
+      shopUrl: shopUrl,
+      priceTag: priceTag,
     }
   );
 
   return output;
 };
-
-// jQuery.ajax(mainUrl).done(function(items){
-//   buildAllRepos(items);
-// });

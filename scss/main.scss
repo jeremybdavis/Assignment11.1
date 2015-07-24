@@ -1,21 +1,85 @@
 @import "libraries/bourbon/bourbon.scss";
 @import "libraries/neat/neat.scss";
 
-main {
-  @include outer-container;
+body {
+  background-color: #F5F5F1;
 
-  aside {
+  main {
+    @include outer-container;
 
-    #sidebar {
-      @include span-columns(3);
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
     }
   }
+}
 
-  #primary-content {
-    @include span-columns(9);
-    float: right;
+// SIDEBAR
+
+#sidebar {
+  @include span-columns(2.9);
+
+  .categories{
+    background-color: #fff;
   }
+}
+
+// ITEMS
+
+section#primary-content {
+  @include span-columns(8.4);
+  float: right;
+
+  .item{
+    @include span-columns(2.7 of 8.4);
+    border-color: #ddd;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    background-color: #FFF;
+    border: 1px solid #E1E3DF;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+      padding: 0 5px;
+
+      &:hover{
+        color: #464646;
+      }
+    }
+
+    img {
+      height: 172px;
+      width: 100%;
+    }
+
+    .meta-row {
+      padding: 3px 5px 6px 5px;
+      font-size: 13px;
+
+      p {
+        float: right;
+        margin: 0;
+        color: #78c042;
+      }
+
+      a {
+        color: #b2b2b2;
+      }
+    }
 
 
 
+  }
 }

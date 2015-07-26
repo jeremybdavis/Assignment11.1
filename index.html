@@ -3,15 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>ETSY Search Page</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header>
+      <div class="header-content">
+        <div class="header-inner">
+          <a href="index.html" class="logo">
+            <img src="https://www.etsy.com/assets/dist/images/etsylogo.20150626221852.png" alt="Etsy Logo"/>
+          </a>
+          <div class="search-bar">
+            <input class="search" type="text" value="guitar">
+            <input class="search-button" type="button" value="Search">
+            <select>
+              <option value="Browse">Browse</option>
+            </select>
+          </div>
 
+
+          <ul class="account-nav">
+            <li class="register-link"><a href="#">Register</a></li>
+            <li class="sign-in-link"><a href="#">Sign In</a></li>
+            <li class="cart">
+              <a href="#">
+                <span class="fa fa-shopping-cart"></span>
+                <span class="text-link">Cart</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section id="primary-content">
+        <div class="results">
+          <p class="results-top"><a href="#">All Categories</a><span> > "guitar"</span> (63,029 Results)</p>
+          <p class="sort-by">Sort By: <a href="#">Relevancy</a></p>
+        </div>
 
+        <div class="items">
+
+        </div>
 
       </section>
 
@@ -43,15 +76,15 @@
             <p>Item Type</p>
             <form>
               <a href="#">
-                <input type="radio" value="All Items" checked>All Items
+                <input type="radio" value="All Items" class="radio" checked>All Items
               </a>
               <br>
               <a href="#">
-                <input type="radio" value="Handmade">Handmade
+                <input type="radio" value="Handmade" class="radio">Handmade
               </a>
               <br>
               <a href="#">
-                <input type="radio" value="Vintage">Vintage
+                <input type="radio" value="Vintage" class="radio">Vintage
               </a>
             </form>
           </div>
@@ -59,10 +92,10 @@
           <div class="searchType">
             <p>Price</p>
             <form type="text">
-              <input type="text" placeholder="Low" name="lowPrice">
+              <input type="text" class="price" placeholder="Low" name="lowPrice">
               <span>to</span>
-              <input type="text" placeholder="High" name="lowPrice">
-              <input type="submit" value="|>">
+              <input type="text" class="price" placeholder="High" name="lowPrice">
+              <input type="submit" class="submit" value="|>">
             </form>
           </div>
 
@@ -98,18 +131,18 @@
 
           <div class="searchType">
             <p>Ordering Options</p>
-            <form>
-              <a href="#"><input type="checkbox">Accepts Etsy Gift Cards</a>
+            <form class="ordering">
+              <a href="#"><input type="checkbox" class="checkbox">Accepts Etsy Gift Cards</a>
               <br>
-              <a href="#"><input type="checkbox">Customizable</a>
+              <a href="#"><input type="checkbox" class="checkbox">Customizable</a>
             </form>
           </div>
 
           <div class="searchType">
             <form>
-              <a href="#"><input type="radio" checked>Anywhere</a>
+              <a href="#"><input type="radio" class="radio" checked>Anywhere</a>
               <br>
-              <a href="#"><input type="radio">Choose a custom location</a>
+              <a href="#"><input type="radio" class="radio">Choose a custom location</a>
             </form>
           </div>
 

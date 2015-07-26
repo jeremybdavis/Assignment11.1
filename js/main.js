@@ -18,7 +18,7 @@ var buildAllItems = function(items){
     return html + item;
   });
 
-  var $items = $('#primary-content');
+  var $items = $('.items');
   $items.html(html);
 };
 
@@ -30,8 +30,8 @@ var buildItems = function(item){
   var imgUrl = item.url;
   var title = item.title;
   var subtitle = function(){
-    if(title.length > 28){
-      return title.substring(0, 28) + "...";
+    if(title.length > 24){
+      return title.substring(0, 24) + "...";
     } else {
       return title;
     }

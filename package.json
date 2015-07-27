@@ -1,0 +1,27 @@
+{
+  "name": "etsy-search",
+  "version": "1.0.0",
+  "description": "Etsy Search Project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremybdavis/Assignment11.1.git"
+  },
+  "author": "Jeremy Davis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremybdavis/Assignment11.1/issues"
+  },
+  "homepage": "https://github.com/jeremybdavis/Assignment11.1#readme",
+  "dependencies": {
+    "babel": "^5.8.9",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-sass": "^2.0.4"
+  }
+}

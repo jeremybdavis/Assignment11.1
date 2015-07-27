@@ -7,9 +7,8 @@ $.ajax(mainUrl, {
   },
   success: function(data, textStatus, xhr){
     buildAllItems(data.results);
-    console.log(data.results);
   }
-})
+});
 
 var buildAllItems = function(items){
   var html = items.map(buildItems);

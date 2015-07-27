@@ -148,7 +148,8 @@ header {
   #sidebar:last-child {
     margin-right: 0; }
   #sidebar a {
-    color: #0192B5; }
+    color: #0192B5;
+    font-weight: normal; }
     #sidebar a:hover {
       text-decoration: underline; }
   #sidebar p {
@@ -293,7 +294,7 @@ section#primary-content {
       margin-right: 0; }
     section#primary-content .item p {
       margin: 0;
-      font-size: 14px;
+      font-size: 12px;
       color: #555;
       padding: 0 5px; }
       section#primary-content .item p:hover {
@@ -303,7 +304,7 @@ section#primary-content {
       width: 100%; }
     section#primary-content .item .meta-row {
       padding: 3px 5px 6px 5px;
-      font-size: 13px; }
+      font-size: 12px; }
       section#primary-content .item .meta-row p {
         float: right;
         margin: 0;
